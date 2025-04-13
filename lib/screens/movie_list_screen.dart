@@ -107,7 +107,7 @@ class _MovieListScreenState extends State<MovieListScreen> {
     if (query.isNotEmpty) {
       setState(() {
         displayList =
-            movieList.where((movie) {
+            displayList.where((movie) {
               return movie.title != null &&
                   movie.title!.toLowerCase().contains(query.toLowerCase());
             }).toList();
